@@ -1,10 +1,15 @@
 package com.pi.client.api;
 
 import com.pi.client.feign.ClientEurekaClient;
+import com.pi.client.usercenter.endpoint.intf.UserAccountClient;
+import com.pi.client.usercenter.endpoint.vo.UserAccountVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class WsEndpoint {
@@ -18,8 +23,8 @@ public class WsEndpoint {
      */
     @GetMapping("/eureka/services")
     public String getEurekaServices() {
-        return "WsEndpoint.getEurekaServices : " + clientEurekaClient.getServices();
+        String services = clientEurekaClient.getServices();
+        return "WsEndpoint.getEurekaServices : " + services;
     }
-
 
 }

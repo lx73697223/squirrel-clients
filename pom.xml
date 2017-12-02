@@ -17,8 +17,8 @@
 
     <modules>
         <module>squirrel-client-eureka</module>
-        <module>squirrel-client-feign</module>
         <module>squirrel-client-cloud-config</module>
+        <module>squirrel-client-feign</module>
     </modules>
 
 </project>
