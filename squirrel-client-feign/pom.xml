@@ -52,7 +52,7 @@
 
         <dependency>
             <groupId>com.pipi</groupId>
-            <artifactId>squirrel-usercenter-endpoint-interface</artifactId>
+            <artifactId>squirrel-user-account-endpoint-intf</artifactId>
         </dependency>
     </dependencies>
 

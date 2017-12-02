@@ -1,8 +1,6 @@
 package com.pi.client.api;
 
 import com.pi.client.feign.ClientEurekaClient;
-import com.pi.client.usercenter.endpoint.intf.UserAccountClient;
-import com.pi.client.usercenter.endpoint.vo.UserAccountVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
