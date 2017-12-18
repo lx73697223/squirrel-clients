@@ -20,7 +20,7 @@ public class UserCenterEndpoint {
     private UserAccountClient userAccountClient;
 
     @GetMapping("/userAccounts")
-    public ResponseEntity<List<UserAccountVo>> getAllUserAccounts(@RequestParam("ids") Set<Long> ids) {
+    public ResponseEntity<List<UserAccountVo>> getAllUserAccounts(@RequestParam("ids") Set<String> ids) {
         return userAccountClient.getUserAccounts(ids);
     }
 
